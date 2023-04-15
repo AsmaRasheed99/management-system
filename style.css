@@ -10,23 +10,24 @@ main {
 .inputs {
   display: flex;
 flex-wrap: wrap;
-  min-height: 100vh;
   flex-direction: row;
   margin: 0;
+ 
 }
 
 .col {
   display: flex;
   flex-direction: column;
   flex: 5;
+  flex-wrap: wrap;
   text-align: center;
+  
 }
 .col-1 {
-  display: flex;
+  display:flex;
   gap: 2rem;
   margin: 5rem;
   flex-direction: row;
-  flex-wrap:nowrap;
  font-size: larger;
  font-family:'Times New Roman', Times, serif;
  
@@ -59,7 +60,7 @@ flex-wrap: wrap;
   color: #332C39;
   text-shadow:1px 1px 1px 1px rgb(201, 44, 109, 0.9);
   background: #609EA2;
-  height: 30vh;
+  height: 35vh;
   justify-content: center;
 }
 .h, p, article, aside {

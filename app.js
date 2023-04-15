@@ -24,7 +24,7 @@ DataCollected.addEventListener("submit",function(event){
   userSalary=event.target.userSalary.value;
   userDepartment=event.target.userDepartment.value;
   userImg=event.target.userimg.value;
-  // DataCollected.reset();
+  DataCollected.reset();
 
 
   let Employee = new Person(userName ,userLevel,userID,userSalary,userDepartment,userImg);
@@ -99,8 +99,10 @@ function render(){
     p3.textContent=`${empData[i].userSalary}`;
    
   
-    divData.style.border="hidden";
-    divContainer.style.boxShadow=" 2px 5px 10px rgba(0,0,0,0.3)";
+   
+    divContainer.style.boxShadow=" 5px 7px 10px #609EA2";
+    
+   
 
     divData.appendChild(p1);
     divData.appendChild(p2);

@@ -10,4 +10,4 @@
 * BOOTSTRAP
 
 ### Live URL:
-[Management Systeml](https://asmarasheed99.github.io/management-system/)
+[Management System](https://asmarasheed99.github.io/management-system/)

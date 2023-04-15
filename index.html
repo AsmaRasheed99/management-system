@@ -17,30 +17,30 @@
   <header>
     <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
-        <a class="nav-link" style="color: #332C39" aria-current="page" href="#">Home</a>
+        <a class="nav-link" style="color: #332C39" aria-current="page" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: #332C39" href="#">Employees</a>
+        <a class="nav-link" style="color: #332C39" href="#Employee-card">Employees</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style="color: #332C39" href="#">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: #332C39" href="#" tabindex="-1">Contact Us</a>
+        <a class="nav-link" style="color: #332C39" href="#contact" tabindex="-1">Contact Us</a>
       </li>
     </ul>
   </header>
 
-
+  <main>
   <div class="col">
-    <div class="h"><img class="img-fluid" style="background-color: #609EA2;" src="imgs/logo.png" alt=""></div>
-    <main>
+    <div class="h"><img class="img-fluid" style="background-color: #609EA2;" src="imgs/logo.png" alt="logo img"></div>
+    
 
       <form id="form">
         <div class="inputs">
           <article>
             <p>BRING OUT THE BEST IN YOUR PEOPLE </p>
-            <hr> Highly engaged employees and top-performing organizations.</br>
+            <hr><hr> Highly engaged employees and top-performing organizations.</br>
           </article>
           <aside>
             <input class="input" id="username" name="username" placeholder="Full name" type="text" id="name_link0"
@@ -59,7 +59,7 @@
             <input class="input" id="userimg" name="userimg" value="imgs/employee.jpg" placeholder="user image src"
               type="text" id="category_0" required>
 
-           
+
             <select class="input" id="userDepartment" name="userDepartment">
               <option value="" disabled selected hidden>Department</option>
               <option value="Administration">Administration</option>
@@ -76,8 +76,12 @@
         </div>
 
       </form>
-      <hr>
-      <div class="col-1" id="Employee-card">
+  </div>
+
+      <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;
+      ">Skill Wave Employees</h1>
+      
+      <div id="Employee-card">
 
 
 
@@ -92,7 +96,7 @@
       <!-- Grid container -->
       <div class="container pt-4">
         <!-- Section: Social media -->
-        <section class="mb-4">
+        <section class="mb-4" id="contact">
           <!-- Facebook -->
           <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
             data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a>

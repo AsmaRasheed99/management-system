@@ -86,7 +86,7 @@ function seniorSalary(min, max) {
 function render(){
   for(let i=0;i<empData.length;i++){
 
-    let sdcard= document.getElementById("Employee-card");
+    let emcard= document.getElementById("Employee-card");
     let divContainer = document.createElement('div');
     let img0 = document.createElement('img');
     img0.src=`${empData[i].userImg}`;
@@ -101,7 +101,7 @@ function render(){
   
    
     divContainer.style.boxShadow=" 5px 7px 10px #609EA2";
-    
+    img0.style.width="100%"
    
 
     divData.appendChild(p1);
@@ -111,7 +111,7 @@ function render(){
   
     divContainer.appendChild(img0);
     divContainer.appendChild(divData);
-    sdcard.appendChild(divContainer);
+    emcard.appendChild(divContainer);
 
   }
 }

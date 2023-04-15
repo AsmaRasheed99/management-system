@@ -1,6 +1,6 @@
 * {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #F0EEED;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #f0eeed;
 }
 main {
   width: 100%;
@@ -9,64 +9,67 @@ main {
 
 .inputs {
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   flex-direction: row;
-  margin: 0;
- 
+  margin-bottom: 7rem;
 }
 
 .col {
   display: flex;
   flex-direction: column;
   flex: 5;
-  flex-wrap: wrap;
   text-align: center;
-  
+  flex-wrap: wrap;
 }
-.col-1 {
+h1 {
   display:flex;
-  gap: 2rem;
-  margin: 5rem;
-  flex-direction: row;
- font-size: larger;
- font-family:'Times New Roman', Times, serif;
- 
+  justify-content: center;
+}
+#Employee-card {
+  text-align: center;
+  display: inline-flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin: 7rem;
+  gap: 5rem;
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-.inputs > article > p{
+.inputs > article > p {
   flex: 2;
   font-weight: bold;
-  font-size:2rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color: #332C39;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #332c39;
 }
 .inputs > article {
   flex: 2;
   min-height: 60vh;
-  font-size:xx-large;
+  font-size: xx-large;
   margin-top: 2rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color: #332C39;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #332c39;
   margin-left: 5rem;
 }
 
 .inputs > aside {
   flex: 3;
   margin-top: 5rem;
-  
 }
 .h {
-  color: #332C39;
-  text-shadow:1px 1px 1px 1px rgb(201, 44, 109, 0.9);
-  background: #609EA2;
+  color: #332c39;
+  text-shadow: 1px 1px 1px 1px rgb(201, 44, 109, 0.9);
+  background: #609ea2;
   height: 35vh;
   justify-content: center;
 }
-.h, p, article, aside {
+.h,
+p,
+article,
+aside {
   padding: 1em;
 }
-
 
 .input {
   margin: 1rem;
@@ -75,15 +78,14 @@ flex-wrap: wrap;
   border-radius: 15px;
   padding: 1em;
   background-color: #ccc;
-  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
   transition: 300ms ease-in-out;
 }
 
 .input:focus {
   background-color: white;
   transform: scale(1.05);
-  box-shadow: 13px 13px 100px #969696,
-             -13px -13px 100px #ffffff;
+  box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
 }
 
 select {
@@ -92,18 +94,16 @@ select {
 
 .button {
   margin-top: 2rem;
-  color: #332C39;
-padding: 0.7em 1.7em;
-font-size: 18px;
-border-radius: 0.5em;
-background: white;
-border: 1px solid #e8e8e8;
-box-shadow: 6px 6px #C92C6D,
-           -6px -6px #609EA2;
+  color: #332c39;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: white;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px #c92c6d, -6px -6px #609ea2;
 }
 
-@media all and (max-width:640px) {
-
+@media all and (max-width: 640px) {
   .inputs > article {
     margin-left: 0rem;
   }
@@ -111,14 +111,16 @@ box-shadow: 6px 6px #C92C6D,
     height: 20vh;
   }
 }
-@media all and (max-width:535px) {
-
+@media all and (max-width: 535px) {
   .h {
     height: 20vh;
   }
   .col-1 {
-    flex-wrap: wrap;
+    margin-left: 2rem;
   }
-
 }
-
+@media all and (max-width: 400px) {
+  .col-1 {
+    margin-left: 1rem;
+  }
+}

@@ -21,65 +21,57 @@ DataCollected.addEventListener("submit",function(event){
   userName=event.target.username.value;
   userLevel=event.target.userLevel.value;
   userID=event.target.userID.value;
-  userSalary=event.target.userSalary.value;
   userDepartment=event.target.userDepartment.value;
   userImg=event.target.userimg.value;
+  userSalary = calculateSalary()
+
   DataCollected.reset();
 
 
-  let Employee = new Person(userName ,userLevel,userID,userSalary,userDepartment,userImg);
+  let Employee = new Person(userName ,userLevel,userID,userDepartment,userImg, userSalary);
 
      empData.push(Employee);
      localStorage.setItem('empData',JSON.stringify(empData) );
+     userSalary = calculateSalary()
      render();
 });
 
 
-function Person(userName ,userLevel,userID,userSalary,userDepartment,userImg) {
+function Person(userName ,userLevel,userID,userDepartment,userImg, userSalary) {
   this.userName = userName; 
-  this.userLevel = userLevel;
   this.userID = userID;
-  this.userSalary = userSalary;
+  this.userLevel = userLevel;
   this.userDepartment = userDepartment;
   this.userImg = userImg;
+  this.userSalary = userSalary;
   
 
 }
 
-function juniorSalary(min, max) {
-  return Math.floor( Math.random() *(max - min + 1) + min);
-  
-   }
-  
 
-function MseniorSalary(min, max) {
-  return Math.floor( Math.random() *(max - min + 1) + min);
-  
-   }
-  
 
-function seniorSalary(min, max) {
-  return Math.floor( Math.random() *(max - min + 1) + min);
-  
-   }
 
  function calculateSalary(){
-  var selectedValue = document.getElementById("userLevel").value;
+  let selectedValue = document.getElementById("userLevel").value;
+  let Salary;
   if(selectedValue == "Junior"){
-    var input = document.getElementById("userSalary");
-    input.setAttribute('value', juniorSalary(500, 1000));
+     Salary = Math.floor( Math.random() *(1000 - 500 + 1) + 500);
+console.log(Salary, selectedValue);
+    return Salary
   }
   else if (selectedValue == "Mid-Senior"){
-    var input = document.getElementById("userSalary");
-    input.setAttribute('value', MseniorSalary(1000, 1500));
+    Salary=  Math.floor( Math.random() *(1500 - 1000 + 1) + 1000);
+    console.log(Salary, selectedValue);
+    return Salary
+    
   }
   else {
-    var input = document.getElementById("userSalary");
-    input.setAttribute('value', seniorSalary(1500, 2000));
+    Salary = Math.floor( Math.random() *(2000 - 1500 + 1) + 1500);
+    console.log(Salary, selectedValue);
+    return Salary
+
   }
  }
-
-
   
 
 
@@ -96,7 +88,7 @@ function render(){
     let p2= document.createElement("p");
     p2.textContent=`Department: ${empData[i].userDepartment} - Level: ${empData[i].userLevel}`;
     let p3= document.createElement("p");
-    p3.textContent=`${empData[i].userSalary}`;
+    p3.textContent=`Salary: ${empData[i].userSalary}`;
    
   
    

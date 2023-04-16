@@ -47,19 +47,13 @@
               required>
 
             <input class="input" id="userID" name="userID" placeholder="ID" type="text" id="category_0" required></br>
-            <select class="input" id="userLevel" name="userLevel" onchange="calculateSalary()">
+            <select class="input" id="userLevel" name="userLevel">
               <option value="" disabled selected hidden>Level</option>
 
               <option value="Junior">Junior</option>
               <option value="Mid-Senior">Mid-Senior</option>
               <option value="Senior">Senior</option>
             </select>
-            <input class="input" id="userSalary" name="userSalary" placeholder="Salary" value="" type="text"
-              id="category_0" required></br>
-            <input class="input" id="userimg" name="userimg" value="imgs/employee.jpg" placeholder="user image src"
-              type="text" id="category_0" required>
-
-
             <select class="input" id="userDepartment" name="userDepartment">
               <option value="" disabled selected hidden>Department</option>
               <option value="Administration">Administration</option>
@@ -67,6 +61,9 @@
               <option value="Development">Development</option>
               <option value="Finance">Finance</option>
             </select></br>
+               
+            <input class="input" id="userimg" name="userimg" value="imgs/employee.jpg" placeholder="user image src"
+              type="text" id="category_0" required></br>
 
             <button type="submit" value="submit" class="button"> Submit
             </button>
